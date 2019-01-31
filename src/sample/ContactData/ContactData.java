@@ -1,5 +1,6 @@
 package sample.ContactData;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import sample.ContactData.Contact;
 
@@ -34,7 +35,8 @@ public class ContactData {
     private ObservableList<Contact> contacts;
 
     private ContactData() {
-        // *** initialize the contacts list here ***
+        this.contacts = FXCollections.observableArrayList();
+        contacts.add(new Contact());
     }
 
     public static ContactData getInstance() {
