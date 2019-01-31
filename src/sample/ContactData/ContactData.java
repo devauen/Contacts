@@ -22,6 +22,7 @@ import java.io.InputStream;
 
 public class ContactData {
 
+    private static ContactData instance = new ContactData();
     private static final String CONTACTS_FILE = "contacts.xml";
 
     private static final String CONTACT = "contact";
@@ -32,8 +33,12 @@ public class ContactData {
 
     private ObservableList<Contact> contacts;
 
-    public ContactData() {
+    private ContactData() {
         // *** initialize the contacts list here ***
+    }
+
+    public static ContactData getInstance() {
+        return instance;
     }
 
     // *** Add methods to add/delete/access contacts here ***
