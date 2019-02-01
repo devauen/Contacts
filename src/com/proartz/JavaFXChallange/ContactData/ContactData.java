@@ -1,8 +1,7 @@
-package sample.ContactData;
+package com.proartz.JavaFXChallange.ContactData;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import sample.ContactData.Contact;
 
 import javax.xml.stream.XMLEventFactory;
 import javax.xml.stream.XMLEventReader;
@@ -36,11 +35,15 @@ public class ContactData {
 
     private ContactData() {
         this.contacts = FXCollections.observableArrayList();
-        contacts.add(new Contact());
+//        contacts.add(new Contact("Johny", "Bravo", "333 333 333", "It's working!!"));
     }
 
     public static ContactData getInstance() {
         return instance;
+    }
+
+    public ObservableList<Contact> getContacts() {
+        return contacts;
     }
 
     // *** Add methods to add/delete/access contacts here ***
