@@ -35,6 +35,6 @@
         <TextField fx:id="lastNameField" promptText="Last Name"/>
         <TextField fx:id="phoneNumberField" promptText="Phone Number"/>
         <TextField fx:id="notesField" promptText="Notes"/>
-        <Button text="Add" onAction="#addPerson"/>
+        <Button text="Add" onAction="#addContact"/>
     </HBox>
 </GridPane>
