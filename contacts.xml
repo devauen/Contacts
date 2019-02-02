@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts>
 <contact>
-	<first_name>Johny</first_name>
+	<first_name>Jimi</first_name>
+	<last_name>Travolta</last_name>
+	<phone_number>444 444 444</phone_number>
+	<notes>Guitar</notes>
+</contact>
+<contact>
+	<first_name>Layla</first_name>
 	<last_name>Bravo</last_name>
 	<phone_number>333 333 333</phone_number>
 	<notes>It's working!!</notes>
 </contact>
 <contact>
-	<first_name>Louisa</first_name>
-	<last_name>Hey</last_name>
-	<phone_number>222 222 222</phone_number>
-	<notes>Smile</notes>
-</contact>
-<contact>
-	<first_name>Jimi</first_name>
-	<last_name>Hendrix</last_name>
-	<phone_number>444 444 444</phone_number>
-	<notes>Guitar</notes>
+	<first_name>Frankie</first_name>
+	<last_name>Knuckles</last_name>
+	<phone_number>555 555 555</phone_number>
+	<notes>POWAH</notes>
 </contact>
 </contacts>

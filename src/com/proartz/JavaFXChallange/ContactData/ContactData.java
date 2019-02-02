@@ -32,9 +32,11 @@ public class ContactData {
     private static final String NOTES = "notes";
 
     private ObservableList<Contact> contacts;
+    private Contact contact;
 
     private ContactData() {
         this.contacts = FXCollections.observableArrayList();
+        this.contact = null;
 //        contacts.add(new Contact("Johny", "Bravo", "333 333 333", "It's working!!"));
     }
 
@@ -46,6 +48,17 @@ public class ContactData {
         return contacts;
     }
 
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact con) {
+        contact = con;
+    }
+
+    public void deleteContact(Contact contact) {
+        contacts.remove(contact);
+    }
     // *** Add methods to add/delete/access contacts here ***
 
     public void loadContacts() {
@@ -194,5 +207,4 @@ public class ContactData {
         eventWriter.add(eElement);
         eventWriter.add(end);
     }
-
 }
